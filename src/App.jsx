@@ -7,6 +7,7 @@ import LoginPage from "./pages/LoginPage";
 import RegisterPage from "./pages/RegisterPage";
 import JobsPage from "./pages/JobsPage";
 import SingleJobPage from "./pages/SingleJobPage";
+import DashboardLayout from "./layouts/DashboardLayout";
 
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
           <Route path="/login" element={<LoginPage />} />
           <Route path="/register" element={<RegisterPage />} />
         </Route>
+        <Route path="/dashboard" element={<DashboardLayout />}></Route>
       </Routes>
     </>
   );
