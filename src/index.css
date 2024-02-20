@@ -1,0 +1,99 @@
+/* UTILTIES */
+/* Default styles for all classes */
+.px-48 {
+  padding: 0 48px;
+}
+
+.py-48 {
+  padding: 48px 0;
+}
+
+.mx-48 {
+  margin: 0 48px;
+}
+
+.my-48 {
+  margin: 48px 0;
+}
+
+.m-48 {
+  margin: 48px;
+}
+
+/* Media query for tablets and above */
+@media only screen and (min-width: 576px) {
+  .px-48 {
+    padding: 0 24px; /* Adjust as needed */
+  }
+
+  .py-48 {
+    padding: 24px 0; /* Adjust as needed */
+  }
+
+  .mx-48 {
+    margin: 0 24px; /* Adjust as needed */
+  }
+
+  .my-48 {
+    margin: 24px 0; /* Adjust as needed */
+  }
+
+  .m-48 {
+    margin: 24px; /* Adjust as needed */
+  }
+}
+
+/* Media query for larger screens */
+@media only screen and (min-width: 768px) {
+  .px-48 {
+    padding: 0 32px; /* Adjust as needed */
+  }
+
+  .py-48 {
+    padding: 32px 0; /* Adjust as needed */
+  }
+
+  .mx-48 {
+    margin: 0 32px; /* Adjust as needed */
+  }
+
+  .my-48 {
+    margin: 32px 0; /* Adjust as needed */
+  }
+
+  .m-48 {
+    margin: 32px; /* Adjust as needed */
+  }
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* NAVBAR */
+.logo {
+  width: 180px;
+}
+
+@media (max-width: 700px) {
+  .navMenue {
+    display: none;
+  }
+  .navButtonContainer {
+    display: none;
+  }
+}
+@media (min-width: 700px) {
+  .hamburgerIcon {
+    display: none;
+  }
+}
+/* END OF NAVBAR */
+
+/* HOME PAGE */
+.hero {
+  background: url("./assets/background1.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
