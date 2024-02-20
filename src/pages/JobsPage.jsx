@@ -19,6 +19,7 @@ import {
   DollarOutlined,
 } from "@ant-design/icons";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 const { Sider, Content } = Layout;
 const { Text } = Typography;
 const dummyJobs = [
@@ -214,9 +215,9 @@ const JobsPage = () => {
                 <Button key={job.id} type="primary">
                   Apply Now
                 </Button>,
-                <Button key={job.id} type="primary">
-                  Read More
-                </Button>,
+                <Link to="/jobs/111" key={job.id}>
+                  <Button type="primary">Read More</Button>
+                </Link>,
                 <Button key={job.id} type="primary">
                   Save
                 </Button>,

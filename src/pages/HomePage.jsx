@@ -160,13 +160,15 @@ const HomePage = () => {
     <div>
       <Carousel autoplay autoplaySpeed={6000} infinite>
         {/* HERO SECTION START */}
-        <Layout
-          style={{
-            textAlign: "center",
-          }}
-          className="hero"
-        >
-          <Space direction="vertical" size={20} className="left">
+        <Layout className="hero">
+          <Space
+            direction="vertical"
+            size={20}
+            className="left"
+            style={{
+              textAlign: "center",
+            }}
+          >
             <Typography.Title
               level={1}
               style={{ color: "white", lineHeight: "1.5" }}
@@ -184,19 +186,21 @@ const HomePage = () => {
           </Space>
         </Layout>
 
-        <Layout
-          style={{
-            textAlign: "center",
-          }}
-          className="hero1"
-        >
-          <Space direction="vertical" size={20} className="left">
+        <Layout className="hero1">
+          <Space
+            direction="vertical"
+            size={20}
+            className="left"
+            style={{
+              textAlign: "center",
+            }}
+          >
             <Typography.Title
               level={1}
               style={{ color: "white", lineHeight: "1.5" }}
               className="responsive-heading"
             >
-              Connect. Discover. Excel. Your Gateway to Career Success.
+              Unlock Your Potential, Find Your Dream Job!
             </Typography.Title>
             <Typography.Paragraph style={{ color: "white", fontSize: "16px" }}>
               Welcome to Job Portal, where opportunities meet ambition! Our
@@ -208,19 +212,21 @@ const HomePage = () => {
           </Space>
         </Layout>
 
-        <Layout
-          style={{
-            textAlign: "center",
-          }}
-          className="hero"
-        >
-          <Space direction="vertical" size={20} className="left">
+        <Layout className="hero">
+          <Space
+            direction="vertical"
+            size={20}
+            className="left"
+            style={{
+              textAlign: "center",
+            }}
+          >
             <Typography.Title
               level={1}
               style={{ color: "white", lineHeight: "1.5" }}
               className="responsive-heading"
             >
-              Connect. Discover. Excel. Your Gateway to Career Success.
+              Connecting Talent with Opportunity
             </Typography.Title>
             <Typography.Paragraph style={{ color: "white", fontSize: "16px" }}>
               Welcome to Job Portal, where opportunities meet ambition! Our
