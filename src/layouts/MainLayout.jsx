@@ -1,4 +1,4 @@
-import { Button, Flex, Layout, Menu, theme, Drawer } from "antd";
+import { Button, Flex, Layout, Menu, theme, Drawer, Typography } from "antd";
 import logo from "../assets/logo.png";
 import { MenuOutlined } from "@ant-design/icons";
 import { useState } from "react";
@@ -96,7 +96,19 @@ const MainLayout = () => {
       >
         <Outlet />
       </Content>
-      <Footer>Footer</Footer>
+      <Footer style={{ textAlign: "center", background: colorBgContainer }}>
+        <div>
+          <Typography.Paragraph>
+            © 2024 Shahzaib's Job Portal
+          </Typography.Paragraph>
+          <Typography.Paragraph>
+            Designed and developed by{" "}
+            <Typography.Link href="https://github.com/MuhammadShahzaibAfzal">
+              Muhammad Shahzaib Afzal
+            </Typography.Link>
+          </Typography.Paragraph>
+        </div>
+      </Footer>
     </Layout>
   );
 };

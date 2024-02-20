@@ -239,7 +239,7 @@ const HomePage = () => {
 
       <section className="px-48" style={{ margin: "40px 0" }}>
         <Typography.Title level={2}>LATEST JOBS</Typography.Title>
-        <Row gutter={[16, 16]}>
+        <Row gutter={[16, 16]} style={{ marginTop: "36px" }}>
           {dummyJobs.map((job) => (
             <JobCard key={job.id} job={job} />
           ))}
