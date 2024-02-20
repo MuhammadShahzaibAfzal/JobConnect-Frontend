@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import { Button, Flex, Layout, Menu, theme, Drawer, Typography } from "antd";
 import logo from "../assets/logo.png";
 import { MenuOutlined } from "@ant-design/icons";

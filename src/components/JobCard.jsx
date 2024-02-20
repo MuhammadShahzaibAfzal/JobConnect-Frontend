@@ -1,4 +1,4 @@
-import React from "react";
+/* eslint-disable react/prop-types */
 import { Card, Typography, Space, Tag, Col } from "antd";
 import {
   EnvironmentOutlined,
@@ -8,6 +8,7 @@ import {
 
 const { Title, Text } = Typography;
 
+// eslint-disable-next-line react/prop-types
 const JobCard = ({ job }) => {
   return (
     <Col
