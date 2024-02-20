@@ -7,7 +7,13 @@ const MyFooter = () => {
     token: { colorBgContainer },
   } = theme.useToken();
   return (
-    <Footer style={{ textAlign: "center", background: colorBgContainer }}>
+    <Footer
+      style={{
+        textAlign: "center",
+        background: colorBgContainer,
+        marginTop: "20px",
+      }}
+    >
       <div>
         <Typography.Paragraph>
           © 2024 Shahzaib's Job Portal

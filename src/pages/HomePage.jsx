@@ -1,6 +1,7 @@
 import {
   Button,
   Card,
+  Carousel,
   Col,
   Input,
   Layout,
@@ -157,32 +158,80 @@ const dummyJobs = [
 const HomePage = () => {
   return (
     <div>
-      {/* HERO SECTION START */}
-      <Layout
-        style={{
-          paddingTop: "80px",
-          paddingBottom: "80px",
-          textAlign: "center",
-        }}
-        className="hero px-48"
-      >
-        <Space direction="vertical" size={20} className="left">
-          <Typography.Title
-            level={1}
-            style={{ color: "white", lineHeight: "1.5" }}
-            className="responsive-heading"
-          >
-            Connect. Discover. Excel. Your Gateway to Career Success.
-          </Typography.Title>
-          <Typography.Paragraph style={{ color: "white", fontSize: "16px" }}>
-            Welcome to Job Portal, where opportunities meet ambition! Our
-            platform is designed to empower job seekers like you to discover
-            exciting career prospects and connect with leading employers
-            worldwide.
-          </Typography.Paragraph>
-          <Button size="large">Explore Now</Button>
-        </Space>
-      </Layout>
+      <Carousel autoplay autoplaySpeed={6000} infinite>
+        {/* HERO SECTION START */}
+        <Layout
+          style={{
+            textAlign: "center",
+          }}
+          className="hero"
+        >
+          <Space direction="vertical" size={20} className="left">
+            <Typography.Title
+              level={1}
+              style={{ color: "white", lineHeight: "1.5" }}
+              className="responsive-heading"
+            >
+              Connect. Discover. Excel. Your Gateway to Career Success.
+            </Typography.Title>
+            <Typography.Paragraph style={{ color: "white", fontSize: "16px" }}>
+              Welcome to Job Portal, where opportunities meet ambition! Our
+              platform is designed to empower job seekers like you to discover
+              exciting career prospects and connect with leading employers
+              worldwide.
+            </Typography.Paragraph>
+            <Button size="large">Explore Now</Button>
+          </Space>
+        </Layout>
+
+        <Layout
+          style={{
+            textAlign: "center",
+          }}
+          className="hero1"
+        >
+          <Space direction="vertical" size={20} className="left">
+            <Typography.Title
+              level={1}
+              style={{ color: "white", lineHeight: "1.5" }}
+              className="responsive-heading"
+            >
+              Connect. Discover. Excel. Your Gateway to Career Success.
+            </Typography.Title>
+            <Typography.Paragraph style={{ color: "white", fontSize: "16px" }}>
+              Welcome to Job Portal, where opportunities meet ambition! Our
+              platform is designed to empower job seekers like you to discover
+              exciting career prospects and connect with leading employers
+              worldwide.
+            </Typography.Paragraph>
+            <Button size="large">Explore Now</Button>
+          </Space>
+        </Layout>
+
+        <Layout
+          style={{
+            textAlign: "center",
+          }}
+          className="hero"
+        >
+          <Space direction="vertical" size={20} className="left">
+            <Typography.Title
+              level={1}
+              style={{ color: "white", lineHeight: "1.5" }}
+              className="responsive-heading"
+            >
+              Connect. Discover. Excel. Your Gateway to Career Success.
+            </Typography.Title>
+            <Typography.Paragraph style={{ color: "white", fontSize: "16px" }}>
+              Welcome to Job Portal, where opportunities meet ambition! Our
+              platform is designed to empower job seekers like you to discover
+              exciting career prospects and connect with leading employers
+              worldwide.
+            </Typography.Paragraph>
+            <Button size="large">Explore Now</Button>
+          </Space>
+        </Layout>
+      </Carousel>
       {/* HERO SECTION END */}
 
       {/* FILTER SECTION START */}

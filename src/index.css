@@ -96,4 +96,30 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  padding: 100px 48px;
+}
+
+.hero1 {
+  background: url("./assets/background.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 100px 48px;
+}
+
+/* JOBS PAGE  */
+@media (max-width: 840px) {
+  .jobsSidebar {
+    display: none;
+    margin-right: 0;
+  }
+}
+.filterBtn {
+  display: none;
+}
+
+@media (max-width: 840px) {
+  .filterBtn {
+    display: block;
+  }
 }
