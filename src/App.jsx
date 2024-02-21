@@ -9,6 +9,7 @@ import JobsPage from "./pages/JobsPage";
 import SingleJobPage from "./pages/SingleJobPage";
 import DashboardLayout from "./layouts/DashboardLayout";
 import DashboardHome from "./pages/dashboard/DashboardHome";
+import AddNewJob from "./pages/dashboard/AddNewJob";
 
 const App = () => {
   return (
@@ -23,6 +24,7 @@ const App = () => {
         </Route>
         <Route path="/dashboard" element={<DashboardLayout />}>
           <Route index element={<DashboardHome />} />
+          <Route path="new-job" element={<AddNewJob />} />
         </Route>
       </Routes>
     </>

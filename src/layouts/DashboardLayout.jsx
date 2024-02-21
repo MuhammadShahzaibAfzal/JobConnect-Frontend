@@ -12,13 +12,13 @@ import Sider from "antd/es/layout/Sider";
 import { useState } from "react";
 import logo from "../assets/logo.png";
 import { Content, Header } from "antd/es/layout/layout";
-import { Outlet } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
 
 const items = [
   {
     key: "1",
     icon: <DashboardOutlined />,
-    label: "Dashboard",
+    label: <Link to="/dashboard">Dashboard</Link>,
   },
   {
     key: "2",
@@ -28,7 +28,7 @@ const items = [
   {
     key: "8",
     icon: <UploadOutlined />,
-    label: "Post a job",
+    label: <Link to="/dashboard/new-job">Post a job</Link>,
   },
   {
     key: "3",
