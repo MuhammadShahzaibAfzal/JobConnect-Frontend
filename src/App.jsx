@@ -8,6 +8,7 @@ import RegisterPage from "./pages/RegisterPage";
 import JobsPage from "./pages/JobsPage";
 import SingleJobPage from "./pages/SingleJobPage";
 import DashboardLayout from "./layouts/DashboardLayout";
+import DashboardHome from "./pages/dashboard/DashboardHome";
 
 const App = () => {
   return (
@@ -20,7 +21,9 @@ const App = () => {
           <Route path="/login" element={<LoginPage />} />
           <Route path="/register" element={<RegisterPage />} />
         </Route>
-        <Route path="/dashboard" element={<DashboardLayout />}></Route>
+        <Route path="/dashboard" element={<DashboardLayout />}>
+          <Route index element={<DashboardHome />} />
+        </Route>
       </Routes>
     </>
   );

@@ -5,12 +5,14 @@ import {
   OrderedListOutlined,
   ProfileOutlined,
   SaveOutlined,
+  UploadOutlined,
 } from "@ant-design/icons";
 import { Layout, Menu, theme } from "antd";
 import Sider from "antd/es/layout/Sider";
 import { useState } from "react";
 import logo from "../assets/logo.png";
 import { Content, Header } from "antd/es/layout/layout";
+import { Outlet } from "react-router-dom";
 
 const items = [
   {
@@ -24,14 +26,19 @@ const items = [
     label: "My Jobs",
   },
   {
-    key: "3",
-    icon: <SaveOutlined />,
-    label: "Saved Jobs",
+    key: "8",
+    icon: <UploadOutlined />,
+    label: "Post a job",
   },
   {
     key: "3",
     icon: <OrderedListOutlined />,
-    label: "Applied Jobs",
+    label: "Jobs Applied",
+  },
+  {
+    key: "7",
+    icon: <SaveOutlined />,
+    label: "Saved Jobs",
   },
   {
     key: "4",
@@ -89,13 +96,11 @@ const DashboardLayout = () => {
         <Content
           style={{
             margin: "24px 16px",
-            padding: 24,
             minHeight: 280,
-            background: colorBgContainer,
             borderRadius: borderRadiusLG,
           }}
         >
-          Content
+          <Outlet />
         </Content>
       </Layout>
     </Layout>
