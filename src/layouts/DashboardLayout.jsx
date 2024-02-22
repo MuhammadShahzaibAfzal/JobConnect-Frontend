@@ -23,7 +23,7 @@ const items = [
   {
     key: "2",
     icon: <OrderedListOutlined />,
-    label: "My Jobs",
+    label: <Link to="/dashboard/my-jobs">My Jobs</Link>,
   },
   {
     key: "8",
@@ -33,22 +33,22 @@ const items = [
   {
     key: "3",
     icon: <OrderedListOutlined />,
-    label: "Jobs Applied",
+    label: <Link to="/dashboard/jobs-applied">Jobs Applied</Link>,
   },
   {
     key: "7",
     icon: <SaveOutlined />,
-    label: "Saved Jobs",
+    label: <Link to="/dashboard/saved-jobs">Saved Jobs</Link>,
   },
   {
     key: "4",
     icon: <ProfileOutlined />,
-    label: "Profile",
+    label: <Link to="/dashboard/profile">Profile</Link>,
   },
   {
     key: "5",
     icon: <LockOutlined />,
-    label: "Change Password",
+    label: <Link to="/dashboard/change-password">Change Password</Link>,
   },
 
   {

@@ -10,6 +10,7 @@ import SingleJobPage from "./pages/SingleJobPage";
 import DashboardLayout from "./layouts/DashboardLayout";
 import DashboardHome from "./pages/dashboard/DashboardHome";
 import AddNewJob from "./pages/dashboard/AddNewJob";
+import MyJobs from "./pages/dashboard/MyJobs";
 
 const App = () => {
   return (
@@ -25,6 +26,7 @@ const App = () => {
         <Route path="/dashboard" element={<DashboardLayout />}>
           <Route index element={<DashboardHome />} />
           <Route path="new-job" element={<AddNewJob />} />
+          <Route path="my-jobs" element={<MyJobs />} />
         </Route>
       </Routes>
     </>
