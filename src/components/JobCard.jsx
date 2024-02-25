@@ -26,24 +26,25 @@ const JobCard = ({ job }) => {
             height: "100%",
           }}
         >
-          <Title level={4}>{job.title}</Title>
-          <Text strong>{job.company}</Text>
+          <Title level={4}>{job?.title}</Title>
+          <Text strong>{job?.companyName}</Text>
           <Space direction="vertical" style={{ width: "100%" }} size="small">
             <Text>
-              <EnvironmentOutlined /> {job.location}
+              <EnvironmentOutlined /> {job?.location}
             </Text>
             <Text>
-              <CalendarOutlined /> {job.datePosted}
+              <CalendarOutlined /> {job?.createdAt}
             </Text>
             <Text>
-              <DollarOutlined /> {job.salary}
+              <DollarOutlined /> {job?.salary?.min}-{job?.salary?.max}{" "}
+              {job?.salary?.currency}
             </Text>
-            <Text>{job.description}</Text>
+            <Text>{job?.description}</Text>
           </Space>
           <div style={{ marginTop: "6px" }}>
-            {job.tags.map((tag) => (
-              <Tag key={tag} style={{ marginTop: "10px" }}>
-                {tag}
+            {job?.skillsRequired?.map((skill) => (
+              <Tag key={skill} style={{ marginTop: "10px" }}>
+                {skill}
               </Tag>
             ))}
           </div>
